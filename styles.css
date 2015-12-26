@@ -1,4 +1,4 @@
 @charset "utf-8";
-body p span {
-	color: #FF0004;
+body{
+	font-family: 'Cambay', sans-serif;
 }
