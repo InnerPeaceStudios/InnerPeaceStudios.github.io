@@ -37,8 +37,37 @@ a{
 a:visited{
 	color:#65b1ff;
 }
-header{
-	height: 330px;
-	background: #282828 url(../images/banner_03.jpg) no-repeat center bottom;
+
+@keyframes loop{
+	0% {
+		background-image: url(../images/banner_01.jpg);
+	}
+	26% {
+		background-image: url(../images/banner_01.jpg);
+	}
+	42% {
+		background-image: url(../images/banner_02.jpg);
+	}
+	69% {
+		background-image: url(../images/banner_02.jpg);
+	}
+	85% {
+		background-image: url(../images/banner_03.jpg);
+	}
+	100% {
+		background-image: url(../images/banner_03.jpg);
+	}
+}
+/*Featured Content Background*/
+header {	
+	height: 400px;
 	position: relative;
+	background: #282828 url(../images/banner_01.jpg) no-repeat center bottom;
+
+	animation-name: loop;
+	animation-duration: 15s;
+	iteration-count: 2;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
 }
