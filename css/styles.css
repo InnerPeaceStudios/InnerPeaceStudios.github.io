@@ -38,6 +38,27 @@ a:visited{
 	color:#65b1ff;
 }
 
+@-webkit-keyframes loop{
+	0% {
+		background-image: url(../images/banner_01.jpg);
+	}
+	26% {
+		background-image: url(../images/banner_01.jpg);
+	}
+	42% {
+		background-image: url(../images/banner_02.jpg);
+	}
+	69% {
+		background-image: url(../images/banner_02.jpg);
+	}
+	85% {
+		background-image: url(../images/banner_03.jpg);
+	}
+	100% {
+		background-image: url(../images/banner_03.jpg);
+	}
+}
+
 @keyframes loop{
 	0% {
 		background-image: url(../images/banner_01.jpg);
@@ -64,10 +85,16 @@ header {
 	position: relative;
 	background: #282828 url(../images/banner_01.jpg) no-repeat center bottom;
 
-	animation-name: loop;
-	animation-duration: 15s;
+	-webkit-animation-name: loop;
+
+	        animation-name: loop;
+	-webkit-animation-duration: 15s;
+	        animation-duration: 15s;
 	iteration-count: 2;
-	animation-direction: alternate;
-	animation-timing-function: ease-out;
-   animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	        animation-direction: alternate;
+	-webkit-animation-timing-function: ease-out;
+	        animation-timing-function: ease-out;
+   -webkit-animation-iteration-count: infinite;
+           animation-iteration-count: infinite;
 }
