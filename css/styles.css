@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Cambay:400,400italic,700);
+body{
+	font-family: 'Cambay', sans-serif; 
+	font-size: 18px; 
+	font-weight: 400; 
+	color: black; 
+	margin: 0; 
+	padding: 0;
+}
+h1{
+	margin: 0 0 1em 0;
+	font-size: 2.8em;
+	font-weight: 700;
+}
+h2{
+	margin: 0 0 .5em 0;
+	font-size: 1.6em;
+	font-weight: 700;
+	line-height: 1.1em;
+}
+h3{
+	margin: 0 0 .5em 0;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+h4{
+	margin: 0 0 1.5em 0;
+	font-size: 1em;
+	font-weight: 700;
+}
+p{
+	margin: 0 0 1em 0;
+}
+a{
+	color: #007eff;
+}
+a:visited{
+	color:#65b1ff;
+}
+header{
+	height: 330px;
+	background: #282828 url(../images/banner_03.jpg) no-repeat center bottom;
+	position: relative;
+}
