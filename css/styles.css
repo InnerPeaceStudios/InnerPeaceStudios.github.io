@@ -25,12 +25,13 @@ h1{
 	position: absolute;
 	top: 105px;
 	left: 450px;
+	-webkit-transition: all .3s;
 	transition: all .3s;
 	font-size: 1.2em;
 	text-decoration: none;
 	color: #fff;
 	border: 1px solid #fff;
-	padding: 3px 10px 0px 10px;
+	padding: 3px 10px 2px 10px;
 }
 .h1{
 	opacity: .7;
@@ -38,18 +39,17 @@ h1{
 	width: 52%;
 	top: 170px;
 	left: 38%;
-	transition:opacity .4s, font-size .2s, letter-spacing .2s;
+	-webkit-transition: opacity .4s, font-size .2s, letter-spacing .2s;
+	transition: opacity .4s, font-size .2s, letter-spacing .2s;
 }
 .h1:hover > .h1button{
-transform: translate(0px, -80px);
+-webkit-transform: translate(0px, -80px);
+        transform: translate(0px, -80px);
 }
 .h1:hover{
 	opacity: .85;
 	font-size: 110%;
 	letter-spacing: 120%;
-}
-top: 25px;
-		left: 450px;
 }
 h2{
 	margin: 0 0 .5em 0;
@@ -118,6 +118,16 @@ a:visited{
 		background-image: url(../images/banner_03.jpg);
 	}
 }
+@-webkit-keyframes h1button{
+	0% {
+		top: 125px;
+		left: 450px;
+	}
+	100% {
+		top: 25px;
+		left: 450px;
+	}
+}
 @keyframes h1button{
 	0% {
 		top: 125px;
@@ -163,6 +173,7 @@ header {
 	top: 10px;
 	left: 15px;
 	opacity: .86;
+	-webkit-transition: opacity .35s;
 	transition: opacity .35s;
 }
 .logo:hover {opacity: 1;}
