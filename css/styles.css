@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Cambay:400,400italic,700);
 body{
-	font-family: 'Cambay', sans-serif; 
+	font-family: 'Cambay', Helvetica, sans-serif; 
 	font-size: 18px; 
 	font-weight: 400; 
 	color: black; 
-	margin: 0; 
+	margin: 0 auto; 
 	padding: 0;
+	position: relative;
+	max-width: 1440px;
 }
 h1{
 	margin: 0 0 1em 0;
@@ -84,7 +86,6 @@ header {
 	height: 400px;
 	position: relative;
 	background: #282828 url(../images/banner_01.jpg) no-repeat center bottom;
-
 	-webkit-animation-name: loop;
 
 	        animation-name: loop;
