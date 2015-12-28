@@ -1,18 +1,55 @@
 @import url(https://fonts.googleapis.com/css?family=Cambay:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:700);
 body{
 	font-family: 'Cambay', Helvetica, sans-serif; 
 	font-size: 18px; 
 	font-weight: 400; 
 	color: black; 
-	margin: 0 auto; 
-	padding: 0;
-	position: relative;
-	max-width: 1440px;
+	margin: 0 auto;
 }
+.headerCtn{
+	background-color: #282828;
+}
+#Git{color: #ff251a;}
+#Hub{color: #ffba1a;}
 h1{
-	margin: 0 0 1em 0;
-	font-size: 2.8em;
+	margin: 0 0 30px 0;
+	font-size: 3.55em;
 	font-weight: 700;
+	font-family: 'Comfortaa', 'Cambay', Helvetica, sans-serif;
+	color: white;
+	text-shadow: 0 0 3px black;
+	letter-spacing: .1em;
+}
+.h1button{
+	position: absolute;
+	top: 105px;
+	left: 450px;
+	transition: all .3s;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 3px 10px 0px 10px;
+}
+.h1{
+	opacity: .7;
+	position: absolute;
+	width: 52%;
+	top: 170px;
+	left: 38%;
+	transition:opacity .4s, font-size .2s, letter-spacing .2s;
+}
+.h1:hover > .h1button{
+transform: translate(0px, -80px);
+}
+.h1:hover{
+	opacity: .85;
+	font-size: 110%;
+	letter-spacing: 120%;
+}
+top: 25px;
+		left: 450px;
 }
 h2{
 	margin: 0 0 .5em 0;
@@ -44,16 +81,16 @@ a:visited{
 	0% {
 		background-image: url(../images/banner_01.jpg);
 	}
-	26% {
+	30% {
 		background-image: url(../images/banner_01.jpg);
 	}
-	42% {
+	46% {
 		background-image: url(../images/banner_02.jpg);
 	}
-	69% {
+	75% {
 		background-image: url(../images/banner_02.jpg);
 	}
-	85% {
+	91% {
 		background-image: url(../images/banner_03.jpg);
 	}
 	100% {
@@ -81,11 +118,29 @@ a:visited{
 		background-image: url(../images/banner_03.jpg);
 	}
 }
+@keyframes h1button{
+	0% {
+		top: 125px;
+		left: 450px;
+	}
+	100% {
+		top: 25px;
+		left: 450px;
+	}
+}
+/*.h1button{
+	animation-name: h1button;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}*/
 /*Featured Content Background*/
 header {	
 	height: 400px;
 	position: relative;
-	background: #282828 url(../images/banner_01.jpg) no-repeat center bottom;
+	background: url(../images/banner_01.jpg) no-repeat center bottom;
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
 	-webkit-animation-name: loop;
 
 	        animation-name: loop;
@@ -99,3 +154,16 @@ header {
    -webkit-animation-iteration-count: infinite;
            animation-iteration-count: infinite;
 }
+.logo {
+	position: absolute;
+	display: block;
+	width: 110px;
+	height: 89px;
+	background: url(../images/MyLogo.png) no-repeat 0 0;
+	top: 10px;
+	left: 15px;
+	opacity: .86;
+	transition: opacity .35s;
+}
+.logo:hover {opacity: 1;}
+.logo span {display: none;}
