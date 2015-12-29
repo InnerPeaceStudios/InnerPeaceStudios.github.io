@@ -8,7 +8,7 @@ h2{
 }
 h3{
 	margin: 0 0 .5em 0;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-weight: 700;
 }
 h4{
@@ -93,16 +93,27 @@ h1{
 .main a{
 	position:absolute; 
 	display: block; 
-	color: black; 
 	text-decoration: none; 
 	width: 600px;
 	height: 50px;
 	padding-top:280px;
 } 
-.max{background: url(../images/3dsMaxLogo.jpg) no-repeat center top;-webkit-transition: all .3s;transition:all .3s;}
-.max:hover{background: url(../images/banner_01.jpg) no-repeat center top;}
-.photography{background: url(../images/shutterLogo.jpg) no-repeat center top;-webkit-transition: all .3s;transition:all .3s;}
-.photography:hover{background: url(../images/hoverPhotography.jpg) no-repeat center top;}
+.max{
+	background: url(../images/3dsMaxLogo.jpg) no-repeat center top;
+	-webkit-transition: all .3s;
+	transition:all .3s;
+	color: rgba(0,0,0,.7);
+	text-shadow: 0 0 1px rgba(30,30,30,.7);
+}
+.max:hover{background: url(../images/banner_01.jpg) no-repeat center top; color: rgba(255,255,255,0);text-shadow: 0 0 1px rgba(230,230,230,0);}
+.photography{
+	background: url(../images/shutterLogo.jpg) no-repeat center top;
+	-webkit-transition: all .3s;
+	transition:all .3s;
+	color: rgba(0,0,0,.7);
+	text-shadow: 0 0 1px rgba(30,30,30,.7);
+}
+.photography:hover{background: url(../images/hoverPhotography.jpg) no-repeat center top;color: rgba(255,255,255,0);text-shadow: 0 0 1px rgba(230,230,230,0);}
 @-webkit-keyframes loop{
 	0% {
 		background-image: url(../images/banner_01.jpg);
