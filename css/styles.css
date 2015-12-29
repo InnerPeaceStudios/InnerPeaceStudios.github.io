@@ -75,6 +75,7 @@ h1{
 }
 .sectionCtn{
 	height: 330px;
+	background: -webkit-linear-gradient(top, #777 0%, #bbb 2.5%, #bbb 98.5%, #aaa 100%);
 	background: linear-gradient(to bottom, #777 0%, #bbb 2.5%, #bbb 98.5%, #aaa 100%);
 }
 .sectionCtn2{
