@@ -99,12 +99,10 @@ h1{
 	height: 50px;
 	padding-top:280px;
 } 
-.main .max{
-	background: url(../images/3dsMaxLogo.jpg) no-repeat center top;
-}
-.main .photography{
-	background: url(../images/shutterLogo.jpg) no-repeat center top;
-}
+.max{background: url(../images/3dsMaxLogo.jpg) no-repeat center top;-webkit-transition: all .3s;transition:all .3s;}
+.max:hover{background: url(../images/banner_01.jpg) no-repeat center top;}
+.photography{background: url(../images/shutterLogo.jpg) no-repeat center top;-webkit-transition: all .3s;transition:all .3s;}
+.photography:hover{background: url(../images/hoverPhotography.jpg) no-repeat center top;}
 @-webkit-keyframes loop{
 	0% {
 		background-image: url(../images/banner_01.jpg);
