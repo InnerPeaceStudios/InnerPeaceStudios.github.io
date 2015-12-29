@@ -1,5 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Cambay:400,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:700);
+h2{
+	margin: 0 0 .5em 0;
+	font-size: 1.6em;
+	font-weight: 700;
+	line-height: 1.1em;
+}
+h3{
+	margin: 0 0 .5em 0;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+h4{
+	margin: 0 0 1.5em 0;
+	font-size: 1em;
+	font-weight: 700;
+}
+p{
+	margin: 0 0 1em 0;
+}
 body{
 	font-family: 'Cambay', Helvetica, sans-serif; 
 	font-size: 18px; 
@@ -23,7 +42,7 @@ h1{
 }
 .h1button{
 	position: absolute;
-	top: 105px;
+	top: 100px;
 	left: 450px;
 	-webkit-transition: all .3s;
 	transition: all .3s;
@@ -31,51 +50,55 @@ h1{
 	text-decoration: none;
 	color: #fff;
 	border: 1px solid #fff;
-	padding: 3px 10px 2px 10px;
+	padding: 4px 12px 2px 10px;
+	border-radius: 3px;
+	background-color: rgba(255,255,255,.15);
 }
 .h1{
 	opacity: .7;
 	position: absolute;
-	width: 52%;
-	top: 170px;
+	width: 55%;
+	top: 160px;
 	left: 38%;
 	-webkit-transition: opacity .4s, font-size .2s, letter-spacing .2s;
 	transition: opacity .4s, font-size .2s, letter-spacing .2s;
 }
 .h1:hover > .h1button{
--webkit-transform: translate(0px, -80px);
-        transform: translate(0px, -80px);
+-webkit-transform: translate(0px, -75px);
+        transform: translate(0px, -75px);
+        background-color: rgba(255,255,255,.4);
 }
 .h1:hover{
 	opacity: .85;
 	font-size: 110%;
 	letter-spacing: 120%;
 }
-h2{
-	margin: 0 0 .5em 0;
-	font-size: 1.6em;
-	font-weight: 700;
-	line-height: 1.1em;
+.sectionCtn{
+	height: 330px;
+	background: linear-gradient(to bottom, #777 0%, #bbb 2.5%, #bbb 98.5%, #aaa 100%);
 }
-h3{
-	margin: 0 0 .5em 0;
-	font-size: 1.3em;
-	font-weight: 700;
+.sectionCtn2{
+	width: 1200px;
+	margin: 0 auto;
 }
-h4{
-	margin: 0 0 1.5em 0;
-	font-size: 1em;
-	font-weight: 700;
+.main aside{
+	padding: 0;
+	width: 50%;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
 }
-p{
-	margin: 0 0 1em 0;
-}
-a{
-	color: #007eff;
-}
-a:visited{
-	color:#65b1ff;
-}
+
+.main a{
+	display: block; 
+	color: black; 
+	text-decoration: none; 
+	width: 600px;
+	height: 50px;
+	padding-top:280px;
+	background: url(../images/3dsMaxLogo.jpg) no-repeat center top;
+} 
 
 @-webkit-keyframes loop{
 	0% {
@@ -118,37 +141,14 @@ a:visited{
 		background-image: url(../images/banner_03.jpg);
 	}
 }
-@-webkit-keyframes h1button{
-	0% {
-		top: 125px;
-		left: 450px;
-	}
-	100% {
-		top: 25px;
-		left: 450px;
-	}
-}
-@keyframes h1button{
-	0% {
-		top: 125px;
-		left: 450px;
-	}
-	100% {
-		top: 25px;
-		left: 450px;
-	}
-}
-/*.h1button{
-	animation-name: h1button;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}*/
+
+
 /*Featured Content Background*/
 header {	
-	height: 400px;
+	height: 375px;
 	position: relative;
 	background: url(../images/banner_01.jpg) no-repeat center bottom;
-	width: 1280px;
+	width: 1200px;
 	margin: 0 auto;
 	position: relative;
 	-webkit-animation-name: loop;
@@ -170,8 +170,8 @@ header {
 	width: 110px;
 	height: 89px;
 	background: url(../images/MyLogo.png) no-repeat 0 0;
-	top: 10px;
-	left: 15px;
+	top: 15px;
+	left: 25px;
 	opacity: .86;
 	-webkit-transition: opacity .35s;
 	transition: opacity .35s;
