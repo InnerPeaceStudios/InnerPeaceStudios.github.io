@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:700);
 h2{
 	margin: 0 0 .5em 0;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-weight: 700;
 	line-height: 1.1em;
 }
@@ -210,11 +210,11 @@ header {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%,-50%) scale(1,.05);
-	height: 22px;
+	height: 21px;
 	width: 233px;
 	transform-origin: center center;
 	background: rgba(255,255,255,.7);
-	padding: 5px 3px 0px 3px;
+	padding: 5px 3px 1px 3px;
 	border-radius: 10px;
 	text-shadow: 0 0 1px white, 0 0 0 black, 0 0 1px white;
 	transition: all .3s;
