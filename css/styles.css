@@ -51,7 +51,6 @@ h1{
 	color: #fff;
 	border: 1px solid #fff;
 	padding: 4px 12px 2px 10px;
-	height:35px;
 	border-radius: 3px;
 	background-color: rgba(255,255,255,.15);
 }
@@ -197,7 +196,7 @@ header {
 }
 .logo:hover {opacity: 1;}
 .logo span {display: none;}
-.shareCtn{background: grey;height: 240px;}
+.shareCtn{background: grey;height: 300px;}
 .shareCtn2{
 	width: 1200px;
 	text-align: center;
@@ -206,22 +205,22 @@ header {
 }
 .share{
 	opacity: 0;
-	color: rgba(0,0,0,1);
+	color: rgba(255,255,255,.75);
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%,-50%) scale(1,.05);
-	height: 22px;
-	width: 233px;
+	height: 23px;
+	width: 235px;
 	transform-origin: center center;
-	background: rgba(255,255,255,.7);
-	padding: 5px 3px 0px 3px;
+	background: rgba(0,0,0,.7);
+	padding: 5px 3px 1px 3px;
 	border-radius: 10px;
-	text-shadow: 0 0 1px white, 0 0 0 black, 0 0 1px white;
+	text-shadow: 0 0 1px black;
 	transition: all .3s;
 }
 
 .shareCtn:hover > .shareCtn2 > .share{
 	transform: translate(-50%,-50%) scale(1,1);
-	opacity: .85;
-	color: rgba(0,0,0,.5);
+	opacity: 1;
+
 }
