@@ -200,7 +200,6 @@ header {
 .shareCtn{background: grey;height: 240px;}
 .shareCtn2{
 	width: 1200px;
-	text-align: center;
 	margin: 0 auto;
 	position: relative;
 }
@@ -224,4 +223,29 @@ header {
 	transform: translate(-50%,-50%) scale(1,1);
 	opacity: .85;
 	color: rgba(0,0,0,.5);
+}
+
+.toolMax{
+	background-image: url(../images/toolMax.jpg);
+}
+.toolPs{
+	background-image: url(../images/banner_01.jpg);
+}
+.toolSLT{
+	background-image: url(../images/banner_01.jpg);
+}
+.toolGH{
+	background-image: url(../images/banner_01.jpg);
+}
+.toolGF{
+	background-image: url(../images/banner_01.jpg);
+}
+.shareCtnA a{
+	display: block;
+	width: 20%;
+	height: 240px;
+	float: left;
+}
+.shareCtnA a:hover{
+	background-image: url(../images/banner_01.jpg);
 }
