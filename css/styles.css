@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Cambay:400,400italic,700);
-@import url(https://fonts.googleapis.com/css?family=Comfortaa:700);
+！@import url(https://fonts.googleapis.com/css?family=Cambay:400,400italic,700);
+！@import url(https://fonts.googleapis.com/css?family=Comfortaa:700);
 h2{
 	margin: 0 0 .5em 0;
 	font-size: 1.2em;
@@ -197,7 +197,7 @@ header {
 }
 .logo:hover {opacity: 1;}
 .logo span {display: none;}
-.shareCtn{background: grey;height: 240px;}
+.shareCtn{background: grey;height: 260px;}
 .shareCtn2{
 	width: 1200px;
 	margin: 0 auto;
@@ -207,13 +207,12 @@ header {
 	opacity: 0;
 	color: rgba(0,0,0,1);
 	position: absolute;
-	left: 50%;
 	transform: translate(-50%,-50%) scale(1,.05);
 	height: 21px;
 	width: 233px;
 	transform-origin: center center;
 	background: rgba(255,255,255,.7);
-	padding: 5px 3px 1px 3px;
+	padding: 5px 1px 1px 3px;
 	border-radius: 10px;
 	text-shadow: 0 0 1px white, 0 0 0 black, 0 0 1px white;
 	transition: all .3s;
@@ -225,27 +224,38 @@ header {
 	color: rgba(0,0,0,.5);
 }
 
-.toolMax{
-	background-image: url(../images/toolMax.jpg);
-}
-.toolPs{
-	background-image: url(../images/banner_01.jpg);
-}
-.toolSLT{
-	background-image: url(../images/banner_01.jpg);
-}
-.toolGH{
-	background-image: url(../images/banner_01.jpg);
-}
-.toolGF{
-	background-image: url(../images/banner_01.jpg);
-}
+.toolMax{background: url(../images/toolMax.jpg);left:0px;}
+.toolPs{background: url(../images/toolPs.jpg) no-repeat -120px 0;left:240px;}
+.toolSLT{background: url(../images/toolSLT.jpg) no-repeat -10px 0;left:480px;}
+.toolGH{background: url(../images/toolGH.jpg);left:720px;}
+.toolGF{background: url(../images/toolGF.jpg) no-repeat -95px 0;left:960px;}
 .shareCtnA a{
+	position: absolute;
 	display: block;
-	width: 20%;
-	height: 240px;
+	width: 240px;
+	height: 260px;
 	float: left;
+	transition:all .3s;
 }
-.shareCtnA a:hover{
-	background-image: url(../images/banner_01.jpg);
+.toolMax:hover {width: 420px;}
+.toolMax:hover ~.toolPs{left: 420px;}
+.toolPs:hover {
+	width: 420px;
+	left: 150px;
+	background: url(../images/toolPs.jpg) no-repeat 0 0;
 }
+.toolPs:hover ~.toolSLT{left: 570px;}
+.toolSLT:hover {
+	width: 420px;
+	left: 390px;
+	background: url(../images/toolSLT.jpg) no-repeat 0 0;
+}
+.toolSLT:hover ~.toolGH{left: 810px;}
+.toolGH:hover {width: 420px;left: 630px;}
+.toolGH:hover ~.toolGF{left: 1050px;width: 150px;}
+.toolGF:hover {
+	width: 420px;
+	left: 780px;
+	background: url(../images/toolGF.jpg) no-repeat 0 0;
+}
+.shareCtnA span{display: none;}
