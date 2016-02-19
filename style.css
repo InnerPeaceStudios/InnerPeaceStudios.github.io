@@ -13,6 +13,6 @@ header{
 }
 #a{float: left;}
 #b{float: right;}
-div{background-color: #888;display: inline-block;}
+div{background-color: #888;display: inline-block;font-size:5rem;}
 /*.clearfix{overflow: auto;}*/
 ul{height: 160px;width:450px;overflow-Y: scroll;}
