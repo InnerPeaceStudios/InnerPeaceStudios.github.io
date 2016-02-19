@@ -52,6 +52,14 @@ function setMessage(e) {
       ref.child(uid).update({name:username, text:message});
       messageField.value=("");
     }};
+function send(e) {
+  
+    var username = nameField.value;
+    var message = messageField.value;
+    console.log(uid);
+    ref.child(uid).update({name:username, text:message});
+    messageField.value=("");
+};
 
 
 ref.on('child_changed', function (snapshot) {
