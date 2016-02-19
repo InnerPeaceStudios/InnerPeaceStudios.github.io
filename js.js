@@ -54,7 +54,7 @@ function setMessage(e) {
     }};
 
 
-ref.limitToLast(10).on('child_changed', function (snapshot) {
+ref.on('child_changed', function (snapshot) {
     //GET DATA
     var data = snapshot.val();
     console.log(data);
